@@ -1,0 +1,301 @@
+.about {
+  padding-top: 100px;
+}
+
+.about__title {
+  margin-bottom: 46px;
+}
+
+.about-grid__wrapper {
+  display: grid;
+  grid-template-columns: 600px 500px;
+  grid-template-rows: 270px 241px 84px;
+  grid-template-areas: 
+  "about__img about__text-wrapper"
+  "about__img about__quote"
+  "about__img about__arkasha";
+  column-gap: 80px;
+}
+
+.about__img {
+  grid-area: about__img;
+}
+
+.about__text-wrapper {
+  grid-area: about__text-wrapper;
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+}
+
+.about__quote {
+  position: relative;
+  grid-area: about__quote;
+}
+
+.about__arkasha {
+  grid-area: about__arkasha;
+}
+
+.about__text {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+/* Декор about__quote */
+.about__quote-text {
+  width: 450px;
+  padding: 11px 0 0 31px;
+  font-size: 44px;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+
+.about__quote-text::before,
+.about__quote-text::after {
+  position: absolute;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 50px;
+  color: #6C0287;
+}
+
+.about__quote-text::before {
+  content: "“";
+  top: 0;
+  left: 0;
+}
+
+.about__quote-text::after {
+  content: "”";
+  right: 110px;
+}
+
+
+/* Блок Аркаши */
+.arkasha__quote {
+  display: grid;
+  justify-content: end;
+  grid-template-columns: 80px 280px;
+  gap: 30px;
+}
+
+.arkasha__img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 0 25%;
+}
+
+.arkasha__text {
+  max-width: 250px;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+
+@media (max-width: 1024px) {
+  .about {
+    padding-top: 70px;
+  }
+
+  .about__title {
+    margin-bottom: 26px;
+  }
+
+  .about-grid__wrapper {
+    grid-template-columns: 420.46px 444px;
+    grid-template-rows: 220px 140px 77px;
+    grid-template-areas: 
+    "about__img about__text-wrapper"
+    "about__img about__quote"
+    "about__img about__arkasha";
+    column-gap: 39px;
+  }
+
+  .about__text-wrapper {
+    gap: 24px;
+  }
+
+  .about__text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+
+  /* Декор about__quote */
+  .about__quote-text {
+    width: 419px;
+    padding: 11px 0 0 25px;
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .about__quote-text::before,
+  .about__quote-text::after {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .about__quote-text::before {
+    content: "“";
+    top: 0;
+    left: 0;
+  }
+
+  .about__quote-text::after {
+    content: "”";
+    right: 174px;
+  }
+
+  /* Блок Аркаши */
+  .arkasha__quote {
+    grid-template-columns: 70px 225px;
+    gap: 35px;
+  }
+
+  .arkasha__img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 0 25%;
+  }
+
+  .arkasha__text {
+    max-width: 225px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+
+
+
+@media (max-width: 768px) {
+  .about {
+    padding-top: 60px;
+  }
+
+  .about__title {
+    margin-bottom: 32px;
+  }
+
+  .about-grid__wrapper {
+    grid-template-columns: 382px 278px;
+    grid-template-rows: 380px 79px 78px;
+    grid-template-areas: 
+    "about__img about__text-wrapper"
+    "about__quote about__quote"
+    "about__arkasha about__arkasha";
+    gap: 28px;
+  }
+
+  .about__text-wrapper {
+    padding-top: 65px;
+    gap: 22px;
+  }
+
+  .about__text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+
+  /* Декор about__quote */
+  .about__quote-text {
+    width: 550px;
+    padding: 11px 0 0 22px;
+    font-size: 32px;
+  }
+
+  .about__quote-text::before,
+  .about__quote-text::after {
+    font-size: 32px;
+  }
+
+  .about__quote-text::after {
+    right: 124px;
+  }
+
+  /* Блок Аркаши */
+  .arkasha__quote {
+    gap: 25px;
+    align-items: center;
+  }
+}
+
+
+
+@media (max-width: 420px) {
+  .about {
+    padding-top: 30px;
+  }
+
+  .about__title {
+    margin-bottom: 15px;
+  }
+
+  .about-grid__wrapper {
+    grid-template-columns: 280px;
+    grid-template-rows: 127px 280px 79px 56px;
+    grid-template-areas: 
+    "about__text-wrapper"
+    "about__img"
+    "about__quote"
+    "about__arkasha";
+    gap: 15px;
+  }
+
+  .about__text-wrapper {
+    padding-top: 0;
+    gap: 16px;
+  }
+
+  .about__text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+
+  /* Декор about__quote */
+  .about__quote-text {
+    width: 265px;
+    padding: 6px 0 0 16px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .about__quote-text::before,
+  .about__quote-text::after {
+    font-size: 22px;
+  }
+
+  .about__quote-text::before {
+    top: -7px;
+  }
+
+  .about__quote-text::after {
+    right: 117px;
+    bottom: -9px;
+  }
+
+  /* Блок Аркаши */
+  .arkasha__quote {
+    gap: 11px;
+    align-items: center;
+    grid-template-columns: 56px 213px;
+  }
+
+  .arkasha__img {
+    width: 56px;
+    height: 56px;
+  }
+
+  .arkasha__text {
+    max-width: 175px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}

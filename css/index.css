@@ -1,0 +1,31 @@
+@import "var.css";
+
+@import "normalize.css";
+
+@import "style.css";
+
+@import "menu.css";
+
+@import "services.css";
+
+@import "halls.css";
+
+@import "banner.css";
+
+@import "about.css";
+
+@import "contacts.css";
+
+@import "faq.css";
+
+@import "reviews.css";
+
+@import "copyright.css";
+
+@import url(reserve/reserve-global.css);
+
+@import url(reserve/reserve-halls.css);
+
+@import url(reserve/reserve-kit.css);
+
+@import url(reserve/reserve-blank.css);

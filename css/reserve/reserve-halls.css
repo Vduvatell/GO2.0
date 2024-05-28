@@ -1,0 +1,106 @@
+.reserve__halls {
+  width: 100%;
+}
+
+.halls__text-room {
+  flex-basis: 250px;
+  font-size: 30px;
+  font-weight: 700;
+	line-height: 40px;
+  text-transform: uppercase;
+	cursor: pointer;
+  color: #000;
+  text-align: center;
+  padding: 4px 12px 5px 12px;
+  border: 3px solid transparent;
+  background-color: var(--main-color);
+	border-radius: 8px;
+  transition-duration: 400ms;
+
+
+  &:hover {
+  border: 3px solid #640AA3;
+  background-color: #EADEED;
+  }
+
+
+  &:active {
+  color: #fff;
+  background-color: #6C0287;
+  border: 3px solid #fff;
+  }
+}
+
+
+
+
+/* Прячем input и пишем анимацию */
+.hidden__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+  transform: scale(0);
+
+
+  &:checked + .halls__text-room {
+  border: 3px solid #640AA3;
+  background-color: #fff;
+  }
+}
+
+
+
+@media (max-width: 1024px) {
+  .halls__text-room {
+    flex-basis: 180px;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 7px 17px;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+  .reserve__subtitle {
+    margin-bottom: 31px;
+  }
+
+  .reserve__item {
+    margin-bottom: 49px;
+  }
+
+  .halls__text-room {
+    font-size: 16px;
+    line-height: 15px;
+    padding: 9px 20px;
+    flex-basis: 150px;
+  }
+}
+
+@media (max-width: 420px) {
+  .reserve__subtitle {
+    margin-bottom: 15px;
+  }
+
+  .reserve__item {
+    margin-bottom: 30px;
+  }
+
+  .reserve__halls {
+    flex-wrap: wrap;
+    gap: 14px 20px;
+  }
+
+  .halls__text-room {
+    font-size: 14px;
+    line-height: 12px;
+    padding: 6px 15px;
+    flex-basis: 130px;
+  }
+}

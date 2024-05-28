@@ -1,0 +1,302 @@
+.footer .section {
+  padding-bottom: 145px;
+}
+
+.contacts__title {
+  margin-bottom: 45px;
+}
+
+.contacts__wrapper {
+  display: grid;
+  grid-template-columns: 380px 680px;
+  grid-template-rows: 167px 67px;
+  gap: 40px 119px;
+  grid-template-areas: 
+  "contacts__info map"
+  "contacts__logo map"
+  ;
+}
+
+/* Инфо */
+.contacts__info {
+  display: flex;
+  flex-direction: column;
+  grid-area: contacts__info;
+}
+
+.contacts__info-inner {
+  display: flex;
+  gap: 24px;
+}
+
+.contacts__info-inner:first-child {
+  margin-bottom: 39px;
+}
+
+.contacts__info-inner:nth-child(2) {
+  margin-bottom: 11px;
+}
+
+.contacts__info-text {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+/* Логотипы */
+.contacts__logo {
+  display: flex;
+  gap: 26px;
+  grid-area: contacts__logo;
+}
+
+.contacts__logo-svg {
+  transition: 0.4s;
+}
+
+.contacts__logo-link:hover .contacts__logo-svg{
+  color: #EADEED;
+}
+
+.contacts__logo-link:focus .contacts__logo-svg {
+  color: #EADEED;
+  outline: 1px solid #CD06FF;
+}
+
+.contacts__logo-link:active .contacts__logo-svg {
+  color: #CD06FF;
+}
+
+/* Карта */
+.map {
+  grid-area: map;
+}
+
+.map__img {
+  width: 680px;
+  height: 274px;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+@media (max-width:1024px) {
+  .footer .section {
+    padding-bottom: 94px;
+  }
+
+  .contacts__title {
+    margin-bottom: 24px;
+  }
+
+  .contacts__wrapper {
+    grid-template-columns: 303px 542px;
+    grid-template-rows: 167px 69px;
+    gap: 38px 59px;
+    grid-template-areas: 
+    "contacts__info map"
+    "contacts__logo map"
+    ;
+  }
+
+  /* Инфо */
+
+  .contacts__info-inner {
+    gap: 13px;
+  }
+
+  .contacts__info-inner:first-child {
+    margin-bottom: 45px;
+  }
+
+  .contacts__info-inner:nth-child(2) {
+    margin-bottom: 7px;
+  }
+
+  .contacts__info-text {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .contacts__address-img {
+    max-width: 26px;
+  }
+
+  /* Логотипы */
+  .contacts__logo {
+    gap: 29px;
+  }
+
+  .contacts__logo-svg {
+    width: 38.4px;
+  }
+}
+
+
+
+@media (max-width:768px) {
+  .footer .section {
+    padding-bottom: 73px;
+  }
+
+  .contacts__title {
+    margin-bottom: 30px;
+  }
+
+  .contacts__wrapper {
+    grid-template-columns: 688px;
+    grid-template-rows: 171px 40px 337px;
+    gap: 30px;
+    grid-template-areas: 
+    "contacts__info"
+    "contacts__logo"
+    "map"
+    ;
+  }
+
+  /* Инфо */
+
+  .contacts__info {
+    align-items: center;
+  }
+
+  .contacts__info-inner {
+    justify-content: center;
+    gap: 27px;
+    width: 350px;
+  }
+
+   .contacts__info-text {
+    text-align: center;
+   }
+
+  .line-break_contacts {
+    display: block;
+  }
+
+  .contacts__info-inner:first-child {
+    margin-bottom: 33px;
+  }
+
+  .contacts__info-inner:nth-child(2) {
+    margin-bottom: 27px;
+  }
+
+  /* Лого у адрессов */
+  .contacts__address-img {
+    position: absolute;
+  }
+
+  .contacts__info-inner:first-child .contacts__address-img{
+    left: 292px;
+  }
+
+  .contacts__info-inner:nth-child(2) .contacts__address-img{
+    left: 247px;
+  }
+
+  .contacts__info-inner:last-child .contacts__address-img{
+    left: 213px;
+  }
+
+
+
+  /* Логотипы */
+  .contacts__logo {
+    justify-content: center;
+    gap: 29px;
+  }
+
+  .map__img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+@media (max-width:420px) {
+  .footer .section {
+    padding-bottom: 63px;
+  }
+
+  .contacts__title {
+    margin-bottom: 14px;
+  }
+
+  .contacts__wrapper {
+    grid-template-columns: 280px;
+    grid-template-rows: 93px 55px 194px;
+    gap: 10px;
+    grid-template-areas: 
+    "contacts__info"
+    "contacts__logo"
+    "map"
+    ;
+  }
+
+  /* Инфо */
+
+  .contacts__info-inner {
+    position: relative;
+    justify-content: center;
+    gap: 10px;
+  }
+
+   .contacts__info-text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 18px;
+   }
+
+  .line-break_contacts {
+    display: block;
+  }
+
+  .contacts__info-inner:first-child {
+    margin-bottom: 11px;
+    width: 130px;
+  }
+
+  .contacts__info-inner:nth-child(2) {
+    margin-bottom: 10px;
+    width: 150px;
+  }
+
+  .contacts__info-inner:nth-child(3) {
+    width: 210px;
+  }
+
+  /* Лого у адрессов */
+  .contacts__address-img {
+    position: absolute;
+  }
+
+  .contacts__address-img{
+    width: 20px;
+    height: 20px;
+  }
+
+  .contacts__info-inner:first-child .contacts__address-img{
+    left: 5px;
+  }
+
+  .contacts__info-inner:nth-child(2) .contacts__address-img{
+    left: -10px;
+  }
+
+  .contacts__info-inner:last-child .contacts__address-img{
+    left: 0;
+  }
+
+
+
+  /* Логотипы */
+  .contacts__logo {
+    gap: 20px;
+  }
+
+   .contacts__logo-svg {
+    width: 30px;
+    height: 30px;
+   }
+}

@@ -1,0 +1,157 @@
+/* Общее */
+.reserve__blank {
+  margin-bottom: 40px;
+}
+
+.reserve__blank .reserve__subtitle {
+  margin-bottom: 39px;
+}
+
+.blank__wrapper {
+  display: grid;
+  grid-template-columns: 300px 280px 300px;
+  grid-template-rows: 162px;
+  grid-template-areas: 
+  "blank__main-info blank__name-info blank__contacts-info";
+  gap: 50px;
+}
+
+.blank__info-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.blank__input {
+  height: 52px;
+  width: 100%;
+
+  &:focus {
+    border: 2px solid #CD06FF;
+  }
+}
+
+.blank__info {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/* Дата время люди */
+.blank__info-wrapper_time {
+  display: flex;
+  gap: 32px;
+}
+
+.blank__main-info {
+  gap: 36px;
+}
+
+/* Остальное */
+.blank__name-info,
+.blank__contacts-info {
+  gap: 14px;
+}
+
+.blank__main-info {
+  grid-area: blank__main-info;
+}
+
+.blank__name-info {
+  grid-area: blank__name-info;
+}
+
+.blank__contacts-info {
+  grid-area: blank__contacts-info;
+}
+
+
+@media (max-width: 1024px) {
+  .reserve__blank {
+    margin-bottom: 50px;
+  }
+
+  .reserve__blank .reserve__subtitle {
+    margin-bottom: 21px;
+  }
+
+  .blank__wrapper {
+    grid-template-columns: 300px 251px 254px;
+    grid-template-rows: 168px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .reserve__blank {
+    margin-bottom: 50px;
+  }
+
+  .reserve__blank .reserve__subtitle {
+    margin-bottom: 28px;
+  }
+
+  .blank__main-info {
+    display: grid;
+    grid-template-columns: 280px 300px;
+    gap: 104px;
+  }
+
+  .blank__input_people {
+    width: 300px;
+  }
+
+  .blank__wrapper {
+    grid-template-columns: 280px 300px;
+    grid-template-rows: 52px 162px;
+    grid-template-areas: 
+    "blank__main-info blank__main-info"
+    "blank__name-info blank__contacts-info";
+    gap: 41px 106px;
+  }
+}
+
+
+@media (max-width: 420px) {
+  .reserve__blank {
+    margin-bottom: 30px;
+  }
+
+  .reserve__blank .reserve__subtitle {
+    margin-bottom: 22px;
+  }
+
+  .blank__info {
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .blank__info-wrapper {
+    width: 100%;
+  }
+
+  .blank__main-info {
+    grid-template-columns: 280px;
+    grid-template-rows: repeat(2, 52px);
+    gap: 15px;
+  }
+
+  .blank__input_people {
+    width: 280px;
+  }
+
+  .blank__wrapper {
+    grid-template-columns: 280px ;
+    grid-template-rows: 119px 163px 162px;
+    grid-template-areas: 
+    "blank__main-info"
+    "blank__name-info"
+    "blank__contacts-info";
+    gap: 38px;
+  }
+
+  .blank__text {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}

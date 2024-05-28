@@ -1,0 +1,174 @@
+.kit__wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.kit__item {
+  display: flex;
+  align-items: center;
+}
+
+.kit__text {
+  font-size: 22px;
+  line-height: 25px;
+}
+
+.reserve__radio-button {
+  width: 27px;
+  height: 27px;
+  margin-right: 12px;
+  transition: 400ms;
+}
+
+.reserve__checkbox {
+  width: 25px;
+  height: 25px;
+  margin-right: 12px;
+  transition: 400ms;
+}
+
+
+
+/* Gap внутри трёх разделов */
+.kit__item-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+/* Клик у кнопок */ 
+.reserve__radio-button:focus,
+.reserve__checkbox:focus {
+  outline: 1px solid #CD06FF;
+}
+
+
+
+
+@media (max-width: 1024px) {
+  .reserve__radio-button {
+    width: 27px;
+    height: 27px;
+    margin-right: 12px;
+    transition: 400ms;
+  }
+
+  .reserve__checkbox {
+    width: 25px;
+    height: 25px;
+    margin-right: 12px;
+    transition: 400ms;
+  }
+
+
+
+  /* Gap внутри трёх разделов */
+  .kit__item-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+
+  /* Клик у кнопок */ 
+  .reserve__radio-button:focus,
+  .reserve__checkbox:focus {
+    outline: 1px solid #CD06FF;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .kit__wrapper {
+    flex-wrap: wrap;
+    gap: 32px 137px;
+    justify-content: flex-start;
+  }
+
+  .reserve__radio-button {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+  }
+
+  .reserve__checkbox {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+  }
+
+
+
+  /* Gap внутри трёх разделов */
+  .kit__item-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .reserve__subtitle_other {
+    margin-bottom: 26px;
+  }
+
+  /* Клик у кнопок */ 
+  .reserve__radio-button:focus,
+  .reserve__checkbox:focus {
+    outline: 1px solid #CD06FF;
+  }
+}
+
+
+
+@media (max-width: 420px) {
+  .kit__wrapper {
+    gap: 25px;
+  }
+
+  .reserve__games {
+    margin-right: 30px;
+  }
+
+  .reserve__radio-button {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+  }
+
+  .reserve__checkbox {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+  }
+
+  .kit__text {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+
+
+  /* Gap внутри трёх разделов */
+  .kit__item-wrapper {
+    gap: 16px;
+  }
+
+  .reserve__subtitle_other {
+    margin-bottom: 17px;
+  }
+
+  /* Клик у кнопок */ 
+  .reserve__radio-button:focus,
+  .reserve__checkbox:focus {
+    outline: 1px solid #CD06FF;
+  }
+
+  .kit__item_games {
+    gap: 19px;
+  }
+
+  .kit__item_others {
+    gap: 20px;
+  }
+}

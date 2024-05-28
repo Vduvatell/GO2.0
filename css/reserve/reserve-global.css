@@ -1,0 +1,134 @@
+.reserve {
+  background-color: #440F51;
+  padding-block: 80px;
+}
+
+.reserve__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reserve__title {
+  margin-bottom: 46px;
+}
+
+.reserve__item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.reserve__item:not(:first-child) {
+  width: 980px;
+}
+
+.reserve__subtitle {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  margin: 0 auto 40px;
+}
+
+.kit__subtitle .reserve__subtitle {
+  margin: 0 0 23px 0;
+}
+
+/* Кнопка формы */
+.reserve__form-button {
+  padding: 16px 50px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #6C0287;
+  text-transform: uppercase;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-inline: auto 100px;
+  box-shadow: 0 0 30px #fff;
+}
+
+
+
+@media (max-width: 1024px) {
+  .reserve {
+    padding-block: 60px;
+  }
+
+  .reserve__title {
+    margin-bottom: 39px;
+  }
+
+  .reserve__item:not(:first-child) {
+    width: 100%;
+  }
+
+  .reserve__subtitle {
+    margin-bottom: 26px;
+  }
+
+/* Кнопка формы */
+  .reserve__form-button {
+    padding: 13px 46px;
+    font-size: 18px;
+    line-height: 24px;
+    margin-inline: auto 0;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .reserve {
+    padding-block: 49px;
+  }
+
+  .reserve__item:not(:first-child) {
+    width: 100%;
+  }
+
+  .reserve__subtitle {
+    margin-bottom: 26px;
+  }
+
+/* Кнопка формы */
+  .reserve__form-button {
+    padding: 16px 50px;
+    font-size: 22px;
+    line-height: 28px;
+    margin-inline: auto 0;
+  }
+}
+
+
+
+@media (max-width: 420px) {
+  .reserve {
+    padding-block: 30px;
+  }
+
+  .reserve__item:not(:first-child) {
+    width: 100%;
+  }
+
+  .reserve__title {
+    margin-bottom: 15px;
+  }
+
+  .reserve__subtitle {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 15px;
+  }
+
+  .kit__subtitle .reserve__subtitle {
+    margin: 0 0 15px 0;
+  }
+
+/* Кнопка формы */
+  .reserve__form-button {
+    padding: 17px 59px;
+    font-size: 18px;
+    line-height: 26px;
+    margin-inline: auto 0;
+  }
+}

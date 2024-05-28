@@ -1,0 +1,41 @@
+@import url(../../css/normalize.css);
+
+@import url(../../css/style.css);
+
+@import url(../../css/menu.css);
+
+@import url(../css/banner.css);
+
+@import url(../css/room-have.css);
+
+@import url(../css/other-room.css);
+
+@import url(../../css/contacts.css);
+
+@import url(../../css/copyright.css);
+
+@import url(../../css/var.css);
+
+.title {
+  margin-bottom: 40px;
+}
+
+@media (max-width:1024px) {
+  .title {
+    margin-bottom: 36px;
+  }
+}
+
+
+@media (max-width:768px) {
+  .title {
+    margin-bottom: 30px;
+  }
+}
+
+
+@media (max-width:420px) {
+  .title {
+    margin-bottom: 15px;
+  }
+}
