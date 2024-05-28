@@ -124,11 +124,16 @@
     margin: 0 0 15px 0;
   }
 
+  .kit__item-wrapper {
+    width: 200px;
+  }
+
 /* Кнопка формы */
   .reserve__form-button {
     padding: 17px 59px;
     font-size: 18px;
     line-height: 26px;
-    margin-inline: auto 0;
+    margin-inline: 0 auto;
+    
   }
 }
