@@ -2,7 +2,7 @@
   width: 100%;
 }
 
-.halls__text-room {
+.reserve__text-room {
   flex-basis: 250px;
   font-size: 30px;
   font-weight: 700;
@@ -35,7 +35,7 @@
 
 
 /* Прячем input и пишем анимацию */
-.hidden__input {
+.reserve__hidden-input {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -47,7 +47,7 @@
   transform: scale(0);
 
 
-  &:checked + .halls__text-room {
+  &:checked + .reserve__text-room {
   border: 3px solid #640AA3;
   background-color: #fff;
   }
@@ -55,8 +55,8 @@
 
 
 
-@media (max-width: 1024px) {
-  .halls__text-room {
+@media (max-width: 1240px) {
+  .reserve__text-room {
     flex-basis: 180px;
     font-size: 20px;
     line-height: 24px;
@@ -66,7 +66,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 968px) {
   .reserve__subtitle {
     margin-bottom: 31px;
   }
@@ -75,7 +75,7 @@
     margin-bottom: 49px;
   }
 
-  .halls__text-room {
+  .reserve__text-room {
     font-size: 16px;
     line-height: 15px;
     padding: 9px 20px;
@@ -83,7 +83,7 @@
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 750px) {
   .reserve__subtitle {
     margin-bottom: 15px;
   }
@@ -97,7 +97,7 @@
     gap: 14px 20px;
   }
 
-  .halls__text-room {
+  .reserve__text-room {
     font-size: 14px;
     line-height: 12px;
     padding: 6px 15px;

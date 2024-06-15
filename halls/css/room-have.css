@@ -7,6 +7,7 @@
 .room-have__img {
   width: 600px;
   height: 424px;
+  object-fit: cover;
 }
 
 .room-have__text-wrapper {
@@ -23,7 +24,7 @@
 }
 
 
-@media (max-width:1024px) {
+@media (max-width: 1240px) {
   .room-have__wrapper {
     gap: 30px;
   }
@@ -40,7 +41,7 @@
 
 
 
-@media (max-width:768px) {
+@media (max-width: 968px) {
   .room-have__wrapper {
     gap: 46px;
   }
@@ -56,7 +57,7 @@
 }
 
 
-@media (max-width:420px) {
+@media (max-width: 750px) {
   .room-have__wrapper {
     flex-direction: column;
     gap: 15px;

@@ -132,7 +132,7 @@ fieldset {
 }
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1240px) {
   h2 {
     font-size: 30px;
     line-height: 40px;
@@ -150,7 +150,7 @@ fieldset {
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 968px) {
   h2 {
     font-size: 24px;
     line-height: 36px;
@@ -171,8 +171,7 @@ fieldset {
 }
 
 
-
-@media (max-width: 420px) {
+@media (max-width: 750px) {
   h2 {
     font-size: 14px;
     line-height: 18px;

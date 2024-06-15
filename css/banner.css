@@ -1,7 +1,7 @@
 /* Man__picture */
 .banner-wrapper {
   position: relative;
-  padding-bottom: 154px;
+  padding-bottom: 180px;
 }
 
 .banner-wrapper::after {
@@ -35,7 +35,7 @@
 .banner__info {
   display: flex;
   gap: 40px;
-  margin-bottom: 150px;
+  margin-bottom: 175px;
 }
 
 .info__item {
@@ -53,7 +53,7 @@
 }
 
 .info__span {
-  color: #CD06FF;
+  color: #cd06ff;
   font-weight: 900;
 }
 
@@ -80,21 +80,21 @@
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
-  background-color: #6C0287;
+  background-color: #6c0287;
   border-radius: 10px;
   transition: 0.4s;
-  box-shadow: 0 0 30px #6C0287;
+  box-shadow: 0 0 30px #6c0287;
 
   &:hover {
-    background-color: #840AA3;
+    background-color: #840aa3;
   }
 
   &:focus {
-    background-color: #840AA3;
+    background-color: #840aa3;
   }
 
   &:active {
-    background-color: #640AA3;
+    background-color: #640aa3;
   }
 }
 
@@ -105,19 +105,19 @@
   left: 50%;
   transform: translateX(-50%);
 
-    &:hover .arrow-svg{
-    color: #6C0287;
+  &:hover .arrow-svg {
+    color: #6c0287;
     background-color: #fff;
   }
 
-  &:focus .arrow-svg__wrapper{
+  &:focus {
     background-color: transparent;
-    outline: 1px solid #CD06FF;
+    outline: 1px solid #cd06ff;
     border-radius: 0px;
   }
 
-  &:active .arrow-svg{
-    background-color: #CD06FF;
+  &:active .arrow-svg {
+    background-color: #cd06ff;
   }
 }
 
@@ -129,8 +129,7 @@
   transition: 400ms;
 }
 
-
-@media (max-width: 1024px) {
+@media (max-width: 1240px) {
   .banner {
     padding-block: 30px 48px;
   }
@@ -186,7 +185,6 @@
     line-height: 30px;
   }
 
-
   /* banner__bottom */
   .banner__bottom {
     padding-left: 39px;
@@ -205,11 +203,7 @@
   }
 }
 
-
-
-
-
-@media (max-width: 768px) {
+@media (max-width: 968px) {
   .banner {
     padding-block: 28px 50px;
   }
@@ -266,7 +260,6 @@
     line-height: 18px;
   }
 
-
   /* banner__bottom */
   .banner__bottom {
     padding-left: 0;
@@ -284,7 +277,8 @@
 }
 
 
-@media (max-width: 420px) {
+
+@media (max-width: 750px) {
   .banner {
     padding-block: 20px 31px;
   }
@@ -343,7 +337,6 @@
     font-size: 10px;
     line-height: 11px;
   }
-
 
   /* banner__bottom */
 

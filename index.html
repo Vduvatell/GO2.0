@@ -12,15 +12,17 @@
     <header class="header">
       <div class="container">
         <nav class="menu">
-          <img class="menu__drop" src="img/menu.svg" alt="Меню">
-          <img class="menu__logo" src="img/logo-white.svg" alt="Логотип из букв G и O" />
+          <button class="menu__drop">
+            <img class="menu__drop-img" src="img/menu.svg" alt="Меню">
+          </button>
+          <img class="menu__logo" src="img/logo-white.svg" alt="Логотип из букв G и O">
     
           <ul class="menu__list">
-            <li class="menu__item"><a href="#halls">Залы</a></li>
-            <li class="menu__item"><a href="#about">О нас</a></li>
-            <li class="menu__item"><a href="#reserve">Бронь</a></li>
-            <li class="menu__item"><a href="#reviews">Отзывы</a></li>
-            <li class="menu__item"><a href="#contacts">Контакты</a></li>
+            <li class="menu__item"><a class="menu__item-text" href="#halls">Залы</a></li>
+            <li class="menu__item"><a class="menu__item-text" href="#about">О нас</a></li>
+            <li class="menu__item"><a class="menu__item-text" href="#reserve">Бронь</a></li>
+            <li class="menu__item"><a class="menu__item-text" href="#reviews">Отзывы</a></li>
+            <li class="menu__item"><a class="menu__item-text" href="#contacts">Контакты</a></li>
           </ul>
 
           <button class="menu__button" type="button">Заказать звонок</button>
@@ -39,7 +41,7 @@
 
             <p class="banner__text">Новый формат игр и отдыха</p>
 
-            <div class="banner__info">
+            <div class="banner__info info">
               <div class="info__item">
                 <span class="info__span">4</span>
                 <span class="info__text">Тематических зала</span>
@@ -52,9 +54,7 @@
             </div>
 
             <div class="banner__bottom">
-              <button class="banner__button">
-                <a href="#reserve">Забронировать</a>
-              </button>
+                <a class="banner__button" href="#reserve">Забронировать</a>
 
               <a class="banner__arrow" href="#services">
                 <svg class="arrow-svg" width="97" height="97" viewBox="0 0 97 97" fill="currentColor" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -75,34 +75,34 @@
 
           <ul class="services__list">
             <li class="services__item">
-                <img class="services__img" src="img/We have/vr.jpg" alt="VR очки">
+                <img class="services__img" src="img/We-have/vr.jpg" alt="VR очки">
                 <p class="services__text">VR очки</p>
             </li>
 
             <li class="services__item">
-                <img class="services__img" src="img/We have/audio.jpg" alt="Аудио-система">
+                <img class="services__img" src="img/We-have/audio.jpg" alt="Аудио-система">
                 <p class="services__text">Аудио-система 5.1 с отличным звуком</p>
             </li>
 
             <li class="services__item">
-                <img class="services__img" src="img/We have/micro.jpg" alt="Караоке">
+                <img class="services__img" src="img/We-have/micro.jpg" alt="Караоке">
                 <p class="services__text">Караоке (4 микрофона)</p>
             </li>
 
             <li class="services__item">
-                <img class="services__img" src="img/We have/game.jpg" alt="Настольные игры">
+                <img class="services__img" src="img/We-have/game.jpg" alt="Настольные игры">
                 <p class="services__text">Настольные игры</p>
             </li>
 
             <li class="services__item">
-                <img class="services__img" src="img/We have/netflix.jpg" alt="Кино сервисы">
+                <img class="services__img" src="img/We-have/netflix.jpg" alt="Кино сервисы">
                 <p class="services__text">
                   Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko
                 </p>
             </li>
 
             <li class="services__item">
-                <img class="services__img" src="img/We have/sony.jpg" alt="Игровая консоль">
+                <img class="services__img" src="img/We-have/sony.jpg" alt="Игровая консоль">
                 <p class="services__text">PlayStation 5</p>
             </li>
           </ul>
@@ -117,23 +117,35 @@
 
           <ul class="halls__list">
             <li class="halls__item">
-              <img class="halls__img" src="img/Rooms/vibes-room.jpg" alt="Комната восьмидесятых">
-              <a class="halls__text" href="halls/vibes/vibes.html">80's vibes</a>
+              <a class="halls__item-wrapper" href="halls/vibes/vibes.html">
+                <img class="halls__img" src="img/Rooms/vibes-room.jpg" alt="Комната восьмидесятых">
+                <p class="halls__text">80's vibes</p>
+              </a>
+              
             </li>
 
             <li class="halls__item">
-              <img class="halls__img" src="img/Rooms/wars-room.jpg" alt="Комната звёздных войн">
-              <a class="halls__text" href="halls/starwars/starwars.html">Star wars</a>
+              <a class="halls__item-wrapper" href="halls/starwars/starwars.html">
+                <img class="halls__img" src="img/Rooms/wars-room.jpg" alt="Комната звёздных войн">
+                <p class="halls__text">Star wars</p>
+              </a>
+              
             </li>
 
             <li class="halls__item">
-              <img class="halls__img" src="img/Rooms/west-room.jpg" alt="Комната дикого запада">
-              <a class="halls__text" href="halls/wildwest/wildwest.html">Wild west</a>
+              <a class="halls__item-wrapper" href="halls/wildwest/wildwest.html">
+                <img class="halls__img" src="img/Rooms/west-room.jpg" alt="Комната дикого запада">
+                <p class="halls__text">Wild west</p>
+              </a>
+              
             </li>
 
             <li class="halls__item">
-              <img class="halls__img" src="img/Rooms/neon-room.jpg" alt="Комната неона">
-              <a class="halls__text" href="halls/neon/neon.html">Neon style</a>
+              <a class="halls__item-wrapper" href="halls/neon/neon.html">
+                <img class="halls__img" src="img/Rooms/neon-room.jpg" alt="Комната неона">
+                <p class="halls__text">Neon style</p>
+              </a>
+              
             </li>
           </ul>
         </div>
@@ -151,141 +163,142 @@
               <fieldset class="reserve__item reserve__halls">
                 <legend class="reserve__subtitle">Выбери зал</legend>
 
+                <input class="reserve__hidden-input" type="radio" id="room_1" value="80's vibes" name="room">
+                <label class="reserve__text-room" for="room_1">80's vibes</label>
 
-                  <input class="hidden__input" type="radio" id="room_1" value="80's vibes" name="room">
-                  <label class="halls__text-room" for="room_1">80's vibes</label>
+                <input class="reserve__hidden-input" type="radio" id="room_2" value="Star wars" name="room">
+                <label class="reserve__text-room" for="room_2">Star wars</label>
 
-                  <input class="hidden__input" type="radio" id="room_2" value="Star wars" name="room">
-                  <label class="halls__text-room" for="room_2">Star wars</label>
+                <input class="reserve__hidden-input" type="radio" id="room_3" value="Wild west" name="room">
+                <label class="reserve__text-room" for="room_3">Wild west</label>
 
-                  <input class="hidden__input" type="radio" id="room_3" value="Wild west" name="room">
-                  <label class="halls__text-room" for="room_3">Wild west</label>
-
-                  <input class="hidden__input" type="radio" id="room_4" value="Neon style" name="room">
-                  <label class="halls__text-room" for="room_4">Neon style</label>
+                <input class="reserve__hidden-input" type="radio" id="room_4" value="Neon style" name="room">
+                <label class="reserve__text-room" for="room_4">Neon style</label>
               </fieldset>
 
+              <div class="reserve__subwrapper">
+                <fieldset class="reserve__item reserve__kit kit">
+                  <legend class="reserve__subtitle">Собери набор развлечений</legend>
 
-              <fieldset class="reserve__item reserve__kit">
-                <legend class="reserve__subtitle">Собери набор развлечений</legend>
+                  <div class="kit__wrapper">
+                    <fieldset class="reserve__consols kit__subtitle">
+                      <legend class="reserve__subtitle">Приставка:</legend>
 
-                <div class="kit__wrapper">
-                  <fieldset class="reserve__consols kit__subtitle">
-                    <legend class="reserve__subtitle">Приставка:</legend>
+                      <div class="kit__item-wrapper kit__item-consols">
+                        <div class="kit__item">
+                          <input class="reserve__radio-button" type="radio" id="console__ps" value="PlayStation" name="consols">
+                          <label class="kit__text" for="console__ps">PlayStation 5</label>
+                        </div>
 
-                    <div class="kit__item-wrapper kit__item_consols">
-                      <div class="kit__item">
-                        <input class="reserve__radio-button" type="radio" id="console__ps" value="PlayStation" name="consols">
-                        <label class="kit__text" for="console__ps">PlayStation 5</label>
+                        <div class="kit__item">
+                          <input class="reserve__radio-button" type="radio" id="console__sega" value="Sega Mega Drive" name="consols">
+                          <label class="kit__text" for="console__sega">Sega Mega Drive</label>
+                        </div>
+
+                        <div class="kit__item">
+                          <input class="reserve__radio-button" type="radio" id="console__x-box" value="X-box One X" name="consols">
+                          <label class="kit__text" for="console__x-box">X-box One X</label>
+                        </div>
+
+                        <div class="kit__item">
+                          <input class="reserve__radio-button" type="radio" id="console__dendy" value="Dendy" name="consols">
+                          <label class="kit__text" for="console__dendy">Dendy</label>
+                        </div>
                       </div>
+                    </fieldset>
 
-                      <div class="kit__item">
-                        <input class="reserve__radio-button" type="radio" id="console__sega" value="Sega Mega Drive" name="consols">
-                        <label class="kit__text" for="console__sega">Sega Mega Drive</label>
+
+                    <fieldset class="reserve__games kit__subtitle">
+                      <legend class="reserve__subtitle">Настольные игры</legend>
+
+                      <div class="kit__item-wrapper kit__item-games">
+                        <div class="kit__item">
+                          <input class="reserve__checkbox" type="checkbox" id="jenga" value="Jenga" name="games">
+                          <label class="kit__text" for="jenga">Jenga</label>
+                        </div>
+
+                        <div class="kit__item">
+                          <input class="reserve__checkbox" type="checkbox" id="monopoly" value="Monopoly" name="games">
+                          <label class="kit__text" for="monopoly">Monopoly</label>
+                        </div>  
+
+                        <div class="kit__item">
+                          <input class="reserve__checkbox" type="checkbox" id="manchkin" value="Манчкин" name="games">
+                          <label class="kit__text" for="manchkin">Манчкин</label>
+                        </div>
+
+                        <div class="kit__item">
+                          <input class="reserve__checkbox" type="checkbox" id="alias" value="Alias" name="games">
+                          <label class="kit__text" for="alias">Alias</label>
+                        </div>
                       </div>
+                    </fieldset>
 
-                      <div class="kit__item">
-                        <input class="reserve__radio-button" type="radio" id="console__x-box" value="X-box One X" name="consols">
-                        <label class="kit__text" for="console__x-box">X-box One X</label>
+
+                    <fieldset class="reserve__others ">
+                      <legend class="reserve__subtitle reserve__subtitle_other">Дополнительно</legend>
+
+                      <div class="kit__item-wrapper kit__item-others">
+                        <div class="kit__item">
+                          <input class="reserve__checkbox" type="checkbox" id="other_1" value="Караоке" name="other">
+                          <label class="kit__text" for="other_1">Караоке</label>
+                        </div>
+
+                        <div class="kit__item">
+                          <input class="reserve__checkbox" type="checkbox" id="other_2" value="VR" name="other">
+                          <label class="kit__text" for="other_2">VR</label>
+                        </div>
                       </div>
-
-                      <div class="kit__item">
-                        <input class="reserve__radio-button" type="radio" id="console__dendy" value="Dendy" name="consols">
-                        <label class="kit__text" for="console__dendy">Dendy</label>
-                      </div>
-                    </div>
-                  </fieldset>
-
-
-                  <fieldset class="reserve__games kit__subtitle">
-                    <legend class="reserve__subtitle">Настольные игры</legend>
-
-                    <div class="kit__item-wrapper kit__item_games">
-                      <div class="kit__item">
-                        <input class="reserve__checkbox" type="checkbox" id="jenga" value="Jenga" name="games">
-                        <label class="kit__text" for="jenga">Jenga</label>
-                      </div>
-
-                      <div class="kit__item">
-                        <input class="reserve__checkbox" type="checkbox" id="monopoly" value="Monopoly" name="games">
-                        <label class="kit__text" for="monopoly">Monopoly</label>
-                      </div>  
-
-                      <div class="kit__item">
-                        <input class="reserve__checkbox" type="checkbox" id="manchkin" value="Манчкин" name="games">
-                        <label class="kit__text" for="manchkin">Манчкин</label>
-                      </div>
-
-                      <div class="kit__item">
-                        <input class="reserve__checkbox" type="checkbox" id="alias" value="Alias" name="games">
-                        <label class="kit__text" for="alias">Alias</label>
-                      </div>
-                    </div>
-                  </fieldset>
-
-
-                  <fieldset class="reserve__others ">
-                    <legend class="reserve__subtitle reserve__subtitle_other">Дополнительно</legend>
-
-                    <div class="kit__item-wrapper kit__item_others">
-                      <div class="kit__item">
-                        <input class="reserve__checkbox" type="checkbox" id="other_1" value="Караоке" name="other">
-                        <label class="kit__text" for="other_1">Караоке</label>
-                      </div>
-
-                      <div class="kit__item">
-                        <input class="reserve__checkbox" type="checkbox" id="other_2" value="VR" name="other">
-                        <label class="kit__text" for="other_2">VR</label>
-                      </div>
-                    </div>
-                  </fieldset>
-                </div>
-              </fieldset>
-
-
-              <fieldset class="reserve__item reserve__blank">
-                <legend class="reserve__subtitle">Выбери дату и время</legend>
-
-                <div class="blank__wrapper">
-                  <div class="blank__info blank__main-info">
-                    <div class="blank__info-wrapper_time">
-                      <input class="blank__input" type="date" id="date" value="" name="date" placeholder="Дата" required>
-
-                      <input class="blank__input" placeholder="Время" type="time" id="time" value="" name="time" required>
-                    </div>
-
-                    <input class="blank__input blank__input_people" placeholder="Сколько человек" type="number" id="people" min="1" max="20" value="" name="people" required>
+                    </fieldset>
                   </div>
+                </fieldset>
 
 
-                  <div class="blank__info blank__name-info">
-                    <div class="blank__info-wrapper">
-                      <label class="blank__text" for="first_name">Имя</label>
-                      <input class="blank__input" type="text" id="first_name" value="" name="first_name" required>
+                <fieldset class="reserve__item reserve__blank blank">
+                  <legend class="reserve__subtitle">Выбери дату и время</legend>
+
+                  <div class="blank__wrapper">
+                    <div class="blank__info blank__main-info">
+                      <div class="blank__info-time">
+                        <input class="blank__input" type="date" id="date" value="" name="date" required>
+
+                        <input class="blank__input" type="time" id="time" value="" name="time" required>
+                      </div>
+
+                      <input class="blank__input blank__input_people" placeholder="Сколько человек" type="number" id="people" min="1" max="20" value="" name="people" required>
                     </div>
 
-                    <div class="blank__info-wrapper">
-                      <label class="blank__text" for="second_name">Фамилия</label>
-                      <input class="blank__input" type="text" id="second_name" value="" name="second_name" required>
+
+                    <div class="blank__info blank__name-info">
+                      <div class="blank__info-wrapper">
+                        <label class="blank__text" for="first_name">Имя</label>
+                        <input class="blank__input" type="text" id="first_name" value="" name="first_name" required>
+                      </div>
+
+                      <div class="blank__info-wrapper">
+                        <label class="blank__text" for="second_name">Фамилия</label>
+                        <input class="blank__input" type="text" id="second_name" value="" name="second_name" required>
+                      </div>
+                    </div>
+
+
+                    <div class="blank__info blank__contacts-info">
+                      <div class="blank__info-wrapper">
+                        <label class="blank__text" for="phone">Телефон</label>
+                        <input class="blank__input" type="tel" id="phone" value="" name="phone" required title="'+7-___-___-__-__" pattern="^\+?[7-8]-?[0-9]{3}-?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$">
+                      </div>
+
+                      <div class="blank__info-wrapper">
+                        <label class="blank__text" for="mail">E-mail</label>
+                        <input class="blank__input" type="email" id="mail" value="" name="mail" required>
+                      </div>
                     </div>
                   </div>
+                </fieldset>
 
+                <button class="reserve__form-button" type="submit" formtarget="_blank">Забронировать</button>
+              </div>
 
-                  <div class="blank__info blank__contacts-info">
-                    <div class="blank__info-wrapper">
-                      <label class="blank__text" for="phone">Телефон</label>
-                      <input class="blank__input" type="tel" id="phone" value="" name="phone" required title="'+7-___-___-__-__" pattern="^\+?[7-8]-?[0-9]{3}-?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$">
-                    </div>
-
-                    <div class="blank__info-wrapper">
-                      <label class="blank__text" for="mail">E-mail</label>
-                      <input class="blank__input" type="email" id="mail" value="" name="mail" required>
-                    </div>
-                  </div>
-                </div>
-              </fieldset>
-
-              <button class="reserve__form-button" type="submit" formtarget="_blank">Забронировать</button>
             </form>
           </div>
         </div>
@@ -297,7 +310,7 @@
         <div class="container">
           <h2 class="about__title">О нас</h2>
 
-          <div class="about-grid__wrapper">
+          <div class="about__grid-wrapper">
             <img class="about__img" src="img/About/about_title.jpg" alt="Часть из того, какие услуги мы предоставляем">
 
             <div class="about__text-wrapper">
@@ -322,7 +335,7 @@
             </div>
 
 
-            <div class="about__arkasha">
+            <div class="about__arkasha arkasha">
               <blockquote class="arkasha__quote">
                 <img class="arkasha__img" src="img/ArkashaAbashka/Arkashka.jpg" alt="Фото Аркаши">
                 <p class="arkasha__text">
@@ -344,7 +357,7 @@
             <li class="reviews__item">
               <figure class="reviews__profile">
                 <div class="reviews__gradient">
-                  <img class="reviews__img" src="img/Reviews/Макс.jpg" alt="фото профиля" />
+                  <img class="reviews__img" src="img/Reviews/Макс.jpg" alt="фото профиля">
                 </div>
                 <figcaption class="reviews__caption">Макс Самойлов</figcaption>
               </figure>
@@ -363,7 +376,7 @@
             <li class="reviews__item">
               <figure class="reviews__profile">
                 <div class="reviews__gradient">
-                  <img class="reviews__img reviews__oksana" src="img/Reviews/Оксана.jpg" alt="фото профиля" />
+                  <img class="reviews__img reviews__oksana" src="img/Reviews/Оксана.jpg" alt="фото профиля">
                 </div>
                 <figcaption class="reviews__caption">Оксана Григорьева</figcaption>
               </figure>
@@ -381,7 +394,7 @@
             <li class="reviews__item">
               <figure class="reviews__profile">
                 <div class="reviews__gradient">
-                  <img class="reviews__img" src="img/Reviews/Никита.jpg" alt="фото профиля" />
+                  <img class="reviews__img" src="img/Reviews/Никита.jpg" alt="фото профиля">
                 </div>
                 <figcaption class="reviews__caption">Никита Ященко</figcaption>
               </figure>
@@ -411,9 +424,9 @@
               <p class="faq__text">Можно ли забронировать комнату онлайн?</p>
               <button class="faq__button">
                 <svg class="faq__svg" viewBox="0 0 46 46" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
+                  xmlns="http://www.w3.org/2000/svg">
                   <path class="faq__svg-active" d="M22.8305 14H23.5085V34H22.8305V14Z" fill="currentColor"/>
-                  <path d="M13 24.1695V23.4915H33V24.1695H13Z" fill="currentColor">
+                  <path d="M13 24.1695V23.4915H33V24.1695H13Z" fill="currentColor"/>
                 </svg>
               </button>
               
@@ -424,9 +437,9 @@
 
               <button class="faq__button">
                 <svg class="faq__svg" viewBox="0 0 46 46" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
+                  xmlns="http://www.w3.org/2000/svg">
                   <path class="faq__svg-active" d="M22.8305 14H23.5085V34H22.8305V14Z" fill="currentColor"/>
-                  <path d="M13 24.1695V23.4915H33V24.1695H13Z" fill="currentColor">
+                  <path d="M13 24.1695V23.4915H33V24.1695H13Z" fill="currentColor"/>
                 </svg>
               </button>
             </li>
@@ -436,9 +449,9 @@
               
               <button class="faq__button">
                 <svg class="faq__svg" viewBox="0 0 46 46" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
+                  xmlns="http://www.w3.org/2000/svg">
                   <path class="faq__svg-active" d="M22.8305 14H23.5085V34H22.8305V14Z" fill="currentColor"/>
-                  <path d="M13 24.1695V23.4915H33V24.1695H13Z" fill="currentColor">
+                  <path d="M13 24.1695V23.4915H33V24.1695H13Z" fill="currentColor"/>
                 </svg>
               </button>
             </li>
@@ -448,9 +461,9 @@
 
               <button class="faq__button">
                 <svg class="faq__svg" viewBox="0 0 46 46" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
+                  xmlns="http://www.w3.org/2000/svg">
                   <path class="faq__svg-active" d="M22.8305 14H23.5085V34H22.8305V14Z" fill="currentColor"/>
-                  <path d="M13 24.1695V23.4915H33V24.1695H13Z" fill="currentColor">
+                  <path d="M13 24.1695V23.4915H33V24.1695H13Z" fill="currentColor"/>
                 </svg>
               </button>
             </li>
@@ -460,9 +473,9 @@
 
              <button class="faq__button">
                 <svg class="faq__svg" viewBox="0 0 46 46" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
+                  xmlns="http://www.w3.org/2000/svg">
                   <path class="faq__svg-active" d="M22.8305 14H23.5085V34H22.8305V14Z" fill="currentColor"/>
-                  <path d="M13 24.1695V23.4915H33V24.1695H13Z" fill="currentColor">
+                  <path d="M13 24.1695V23.4915H33V24.1695H13Z" fill="currentColor"/>
                 </svg>
               </button>
             </li>
@@ -562,7 +575,7 @@
 
 
 
-      <section class="copyright">
+      <div class="copyright">
         <div class="container">
           <div class="copyright__item">
             <p class="copyright__text">© Game Over, 2022</p>
@@ -572,7 +585,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </footer>
 
 

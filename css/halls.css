@@ -30,7 +30,7 @@
 }
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1240px) {
   .halls {
     padding-bottom: 70px;
   }
@@ -55,7 +55,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 968px) {
   .halls {
     padding-bottom: 64px;
   }
@@ -81,7 +81,7 @@
 }
 
 
-@media (max-width: 420px) {
+@media (max-width: 750px) {
   .halls {
     padding-bottom: 30px;
   }

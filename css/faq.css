@@ -70,7 +70,7 @@
 }
 
 
-@media (max-width:1024px) {
+@media (max-width:1240px) {
   .faq__title {
     margin-bottom: 27px;
   }
@@ -128,7 +128,7 @@
 
 
 
-@media (max-width:768px) {
+@media (max-width: 968px) {
   .faq {
     padding-block: 22px 40px;
   }
@@ -149,7 +149,7 @@
 
 
 
-@media (max-width:420px) {
+@media (max-width: 750px) {
   .faq {
     padding-block: 22px 17px;
   }

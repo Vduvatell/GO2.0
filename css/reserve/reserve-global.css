@@ -36,21 +36,48 @@
 
 /* Кнопка формы */
 .reserve__form-button {
-  padding: 16px 50px;
+  padding: 13px 47px;
   font-size: 22px;
   font-weight: 700;
   line-height: 28px;
   color: #6C0287;
+  cursor: pointer;
   text-transform: uppercase;
   background-color: #fff;
+  border: 3px solid transparent;
   border-radius: 10px;
-  margin-inline: auto 100px;
   box-shadow: 0 0 30px #fff;
+  transition-duration: 400ms;
+
+
+  &:hover {
+    border: 3px solid #640AA3;
+    background-color: #EADEED;
+    box-shadow: 0 0 30px #640AA3;
+  }
+
+  &:focus {
+    border: 3px solid #640AA3;
+  }
+
+  &:active {
+    color: #fff;
+    border: 3px solid #fff;
+    background-color: #6C0287;
+    box-shadow: 0 0 30px #fff;
+  }
+}
+
+.reserve__subwrapper {
+  display: flex;
+  flex-direction: column;
+  width: 980px;
+  align-items: end;
 }
 
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1240px) {
   .reserve {
     padding-block: 60px;
   }
@@ -74,10 +101,14 @@
     line-height: 24px;
     margin-inline: auto 0;
   }
+
+  .reserve__subwrapper {
+    width: 904px;
+  }
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 968px) {
   .reserve {
     padding-block: 49px;
   }
@@ -97,11 +128,15 @@
     line-height: 28px;
     margin-inline: auto 0;
   }
+
+  .reserve__subwrapper {
+    width: 688px;
+  }
 }
 
 
 
-@media (max-width: 420px) {
+@media (max-width: 750px) {
   .reserve {
     padding-block: 30px;
   }
@@ -134,6 +169,9 @@
     font-size: 18px;
     line-height: 26px;
     margin-inline: 0 auto;
-    
+  }
+
+  .reserve__subwrapper {
+    width: 280px;
   }
 }

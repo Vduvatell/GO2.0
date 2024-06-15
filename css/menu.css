@@ -17,8 +17,24 @@
   gap: 40px;
 }
 
-.menu__item {
+.menu__item-text {
   line-height: 50px;
+  transition-duration: 400ms;
+  border: 1px solid transparent;
+
+
+  &:hover {
+    color: #696969;
+  }
+
+  &:focus {
+    color: #a8a8a8;
+    border: 1px solid #6C0287;
+  }
+
+  &:active {
+    color: #a8a8a8;
+  }
 }
 
 .menu__button {
@@ -50,7 +66,7 @@
 }
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1240px) {
   .menu {
     font-size: 18px;
   }
@@ -59,7 +75,7 @@
     gap: 20px;
   }
 
-  .menu__item {
+  .menu__item-text {
     line-height: 22px;
   }
 
@@ -76,7 +92,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 968px) {
   .menu {
     padding-top: 35px;
   }
@@ -89,14 +105,14 @@
     display: none;
   }
 
-  .menu__item {
+  .menu__item-text {
     line-height: 22px;
   }
 }
 
 
 
-@media (max-width: 420px) {
+@media (max-width: 750px) {
   .menu {
     padding-top: 20px;
   }

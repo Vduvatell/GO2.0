@@ -1,6 +1,6 @@
 .kit__wrapper {
   display: flex;
-  width: 100%;
+  width: 980px;
   justify-content: space-between;
 }
 
@@ -47,7 +47,11 @@
 
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1240px) {
+  .kit__wrapper {
+    width: 904px;
+  }
+
   .reserve__radio-button {
     width: 27px;
     height: 27px;
@@ -80,9 +84,10 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 968px) {
   .kit__wrapper {
     flex-wrap: wrap;
+    width: 688px;
     gap: 32px 137px;
     justify-content: flex-start;
   }
@@ -121,8 +126,9 @@
 
 
 
-@media (max-width: 420px) {
+@media (max-width: 750px) {
   .kit__wrapper {
+    width: 280px;
     gap: 25px;
   }
 
@@ -164,11 +170,11 @@
     outline: 1px solid #CD06FF;
   }
 
-  .kit__item_games {
+  .kit__item-games {
     gap: 19px;
   }
 
-  .kit__item_others {
+  .kit__item-others {
     gap: 20px;
   }
 }

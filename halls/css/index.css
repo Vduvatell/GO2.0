@@ -20,21 +20,21 @@
   margin-bottom: 40px;
 }
 
-@media (max-width:1024px) {
+@media (max-width:1240px) {
   .title {
     margin-bottom: 36px;
   }
 }
 
 
-@media (max-width:768px) {
+@media (max-width:968px) {
   .title {
     margin-bottom: 30px;
   }
 }
 
 
-@media (max-width:420px) {
+@media (max-width:750px) {
   .title {
     margin-bottom: 15px;
   }

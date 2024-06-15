@@ -64,7 +64,7 @@
 
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1240px) {
   .reviews__text2 {
     display: block;
   }
@@ -126,7 +126,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 968px) {
 
   .reviews__title {
     margin-bottom: 30px;
@@ -183,7 +183,7 @@
 
 
 
-@media (max-width: 420px) {
+@media (max-width: 750px) {
 
   .reviews__title {
     margin-bottom: 15px;
